@@ -4,7 +4,7 @@ cask "raflow" do
 
   url "https://github.com/rexshen5913/raflow/releases/download/v#{version}/raflow-v#{version}-macos.zip"
   name "raflow"
-  desc "Double-tap-Cmd voice dictation with on-device Whisper correction for Chinese-English mixed speech"
+  desc "Voice dictation for Chinese-English mixed speech, fully on-device"
   homepage "https://github.com/rexshen5913/raflow"
 
   depends_on arch: :arm64
