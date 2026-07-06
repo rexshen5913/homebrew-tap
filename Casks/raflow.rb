@@ -1,6 +1,6 @@
 cask "raflow" do
-  version "0.1.0"
-  sha256 "9a67d1ae7a026a1118fb5218de21bbda59c91ffc1df1ec5b6d641ac8f5962a37"
+  version "0.1.1"
+  sha256 "8f1047bbcdbaa44e21b9ff7ac2064f5adad403a357d40a6f15be77ac411b83bd"
 
   url "https://github.com/rexshen5913/raflow/releases/download/v#{version}/raflow-v#{version}-macos.zip"
   name "raflow"
