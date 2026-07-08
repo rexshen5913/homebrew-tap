@@ -52,6 +52,11 @@ cask "raflow" do
 
   uninstall quit: "dev.raflow.raflow"
 
+  # 一般 `brew uninstall --cask raflow` 只移除 app，刻意保留 ~/Library/Application Support/raflow
+  # （模型約 550 MB + 使用者設定），避免重裝重新下載。想徹底清除者用：
+  #   brew uninstall --zap --cask raflow
+  zap trash: "~/Library/Application Support/raflow"
+
   caveats <<~EOS
     raflow runs entirely on-device; audio never leaves your Mac.
 
@@ -66,6 +71,8 @@ cask "raflow" do
     Corrections:       ~/Library/Application Support/raflow/replacements.txt
 
     Models are stored in ~/Library/Application Support/raflow/models and are
-    NOT removed on uninstall.
+    NOT removed on a normal uninstall (so a reinstall won't re-download ~550 MB).
+    To also remove the models and your settings, run:
+      brew uninstall --zap --cask raflow
   EOS
 end
