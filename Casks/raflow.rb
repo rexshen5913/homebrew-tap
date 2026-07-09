@@ -62,8 +62,7 @@ cask "raflow" do
 
     On first launch, grant these permissions in System Settings:
       - Speech Recognition and Microphone (prompted automatically)
-      - Input Monitoring (double-tap Cmd detection)
-      - Accessibility (typing text into the focused field)
+      - Accessibility (double-tap Cmd detection + typing into the focused field)
 
     Start/stop dictation by double-tapping the Cmd key.
 
